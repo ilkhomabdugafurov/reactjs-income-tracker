@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import Header from "./components/Header";
 import IncomeForm from "./components/IncomeForm";
 import IncomeList from "./components/IncomeList";
+import Pokemon from "./pages/Pokemon";
 
 const App = () => {
     const [income, setIncome] = useState([]);
@@ -17,9 +18,10 @@ const App = () => {
 
     return (
         <div className="App">
-            <Header totalIncome={totalIncome} />
-            <IncomeForm income={income} setIncome={setIncome} />
-            <IncomeList income={income} setIncome={setIncome} />
+            {/* <Header totalIncome={totalIncome} /> */}
+            {/* <IncomeForm income={income} setIncome={setIncome} /> */}
+            {/* <IncomeList income={income} setIncome={setIncome} /> */}
+            <Pokemon/>
         </div>
     );
 };
